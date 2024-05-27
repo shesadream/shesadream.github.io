@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be my wifeyyyyy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        h1 {
+            color: red;
+        }
+        #response-buttons {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 0 10px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #no-button:hover {
+            position: absolute;
+            left: calc(100vw * Math.random());
+            top: calc(100vh * Math.random());
+        }
+        #yes-button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+        #no-button {
+            background-color: #f44336;
+            color: white;
+            border: none;
+        }
+        #meow {
+            font-size: 24px;
+            transition: font-size 0.5s;
+        }
+        #meow-button {
+            background-color: purple;
+            color: white;
+            border: none;
+        }
+        #heart {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="question">
+        <h1>BE MY WIFEY PWEASE</h1>
+        <div id="response-buttons">
+            <button id="yes-button">Yes</button>
+            <button id="no-button">No</button>
+        </div>
+    </div>
+
+    <img id="heart" src="heart.gif" alt="Heart GIF">
+
+    <div id="meow" style="display: none;">meow</div>
+
+    <script>
+        document.getElementById('yes-button').addEventListener('click', function() {
+            alert('MWAHH 💋💋💋💋💋 MWAHHHHH 💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋💋 ILYSM AHHHHHHHHHHHHH ILYYYYYYYYYY!');
+            var meowButton = document.createElement('button');
+            meowButton.textContent = 'meow';
+            meowButton.id = 'meow-button';
+            var clickCount = 0;
+            meowButton.onclick = function() {
+                clickCount++;
+                var meowElement = document.getElementById('meow');
+                var fontSize = parseInt(window.getComputedStyle(meowElement).fontSize);
+                if (clickCount <= 10) {
+                    meowElement.style.fontSize = (24 + clickCount * 6) + 'px';
+                }
+                if (clickCount == 10) {
+                    meowElement.textContent = 'Haw Haye Thaka Diya Mujhe 😓';
+                }
+                if (clickCount == 11) {
+                    meowElement.textContent = 'Bas';
+                }
+                if (clickCount == 12) {
+                    meowElement.textContent = 'Bas Bas';
+                }
+                if (clickCount == 13) {
+                    meowElement.textContent = 'Bas Bas Bas';
+                }
+                if (clickCount == 14) {
+                    meowElement.textContent = 'Bas Bas Bas Bas';
+                }
+                if (clickCount == 15) {
+                    meowElement.textContent = 'Bas Bas Bas Bas Bas';
+                }
+                if (clickCount == 16) {
+                    meowElement.textContent = '😾😾😾😾😾😾😾😾😾';
+                }
+            };
+            document.body.appendChild(meowButton);
+            document.getElementById('question').remove();
+            document.getElementById('meow').style.display = 'block';
+        });
+
+        document.getElementById('no-button').addEventListener('mouseenter', function() {
+            var button = document.getElementById('no-button');
+            button.style.position = 'absolute';
+            button.style.left = (Math.random() * window.innerWidth) + 'px';
+            button.style.top = (Math.random() * window.innerHeight) + 'px';
+        });
+    </script>
+</body>
+</html>

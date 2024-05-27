@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inconsolata', monospace;
+  background-color: #000;
+  color: #0F0;
+  cursor: url('data:image/x-icon;base64,AAACAAEAICAQAAIAAgDoAgAAFgAAACgAAAAgAAAAQAAAAAEABAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAAAAlf8AAFX/AAA4ODIA//cAABbeNwD/yAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMAAAAAAAAAAAAAAAAAAAMRMAAAAAAAAAAAAAAzMAADETAAADMAAAAAAAADETAAAyIwAANBMAAAAAAAAxEwAAMiMAADUjAAAAAAAANEMAADVTAAADMAAAAAAAADRDAAA1UwAAAAAAAAAAAAADNEM2YAZgAAAAAAAAAAAAAARABmAGYAAAAAAAAAAAAARDNmA0QARAAAAAAAAAAAAEQzZgNEAEQzMzMAAAAAAABmM2YDESIAESJVMAAAAAAAZjNmAxEiABEiVTAAAAAAAGYzRAMzM1UzMzMwAAAAAABmM0QAADNVAAAAAAAAAAAARDNEEREiAwAAAAAAAAAAAEQzRBERIgMAAAAAAAAAAABEMzMzMzMiAAAAAAAAAAAARDMzMzMzIjMzMAAAAAAzABERIiJVVQNVVTAAAAAAMwARESIiVVUDVVUwAAAAZjMAAAAAAAAAADMzAAAAAGYzAAAAAAAAAAAAAAAAAABEMzMzAAAAAAAAAAAAAAAARDMzMwAAAAAAAAAAAAAAMxEiVQAAAAAAAAAAAAAAADMRIlUAAAAAAAAAAAAAAAAzMwAAAAAAAAAAAAAAAAAAMzMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/Pw///x8H//8PA4f/BwMD/wMDA/8DAwP/AwMD/wMDh/8AAP//AAD//wAAA/8AAAH/AAAA/wAAAPwAAAD8AAAA/AAA//wAAP/wAAAP8AAAB/AAAAPwAAABwAAAAMAAAADAAP//wAD//wAD//8AA///AD///wA///8D////A////w=='), auto;
+  background-image: url('background.png');
+  background-size: cover;
+}
+
+a {
+  color: #F00;
+  text-decoration: none;
+}
+
+header {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 60px;
+  letter-spacing: 5px;
+  margin: 0;
+}
+
+main {
+  margin: 50px;
+}
+
+section {
+  margin-bottom: 50px;
+}
+
+h2 {
+  font-size: 36px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+footer {
+  background-color: #000;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin: 0;
+}
